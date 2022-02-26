@@ -26,8 +26,8 @@ const displayMeals = (meals) => {
     const showingGridDiv = document.getElementById('show-grid')
     showingGridDiv.textContent = ''
 
-    if (meals.length == 0) {
-
+    if (meals == null) {
+        document.getElementById('error').style.display = 'block'
     }
 
     else if (meals.length != 0) {
