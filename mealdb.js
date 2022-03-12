@@ -1,3 +1,16 @@
+// setting search result with typing enter keyboard
+
+const searchInput = document.getElementById('input-field');
+const searchBtn = document.getElementById('button-addon2');
+
+searchInput.addEventListener('keypress', function (event) {
+    if (event.keyCode == 13) {
+        searchBtn.click();
+    }
+})
+
+
+
 const loadData = () => {
     const inputText = document.getElementById('input-field');
     const inputValue = inputText.value;
