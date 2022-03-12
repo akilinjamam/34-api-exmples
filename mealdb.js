@@ -4,7 +4,8 @@ const searchInput = document.getElementById('input-field');
 const searchBtn = document.getElementById('button-addon2');
 
 searchInput.addEventListener('keypress', function (event) {
-    if (event.keyCode == 13) {
+    console.log(event.key)
+    if (event.key === 'Enter') {
         searchBtn.click();
     }
 })
